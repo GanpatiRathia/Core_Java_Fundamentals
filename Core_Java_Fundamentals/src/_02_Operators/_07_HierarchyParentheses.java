@@ -3,22 +3,22 @@ package _02_Operators;
 public class _07_HierarchyParentheses {
     public static void main(String[] args) {
 
-        // Overall operator precedence (highest to lowest):
-        // 1. Parentheses ()
-        // 2. Postfix operators: expr++ expr--
-        // 3. Prefix operators: ++expr --expr +expr -expr ~ !
-        // 4. Multiplicative: * / %
-        // 5. Additive: + -
-        // 6. Shift: << >> >>>
-        // 7. Relational: < > <= >= instanceof
-        // 8. Equality: == !=
-        // 9. Bitwise AND: &
-        // 10. Bitwise XOR: ^
-        // 11. Bitwise OR: |
-        // 12. Logical AND: &&
-        // 13. Logical OR: ||
-        // 14. Ternary: ? :
-        // 15. Assignment: = += -= *= /= %= &= ^= |= <<= >>= >>>=
+    	// Overall operator precedence (highest to lowest):
+        // 1. [] . () (method call) - Left to right
+        // 2. ! ~ ++ -- + (unary) - (unary) () (cast) new - Right to left
+        // 3. * / % - Left to right
+        // 4. + - - Left to right
+    	// 5. << >> >>> - Left to right
+        // 6. < <= > >= instanceof - Left to right
+        // 7. == != - Left to right
+        // 8. & - Left to right
+        // 9. ^ - Left to right
+        // 10. | - Left to right
+        // 11. && - Left to right
+        // 12. || - Left to right
+        // 13. ?: (Ternary operator) - Right to left
+        // 14. = += -= *= /= %= &= ^= |= <<= >>= >>>= - Right to left
+
       
         int a = 10, b = 5, c = 2;
 
