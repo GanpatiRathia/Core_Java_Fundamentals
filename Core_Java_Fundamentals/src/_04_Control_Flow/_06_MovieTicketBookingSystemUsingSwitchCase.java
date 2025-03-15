@@ -30,6 +30,7 @@ public class _06_MovieTicketBookingSystemUsingSwitchCase {
                 break;
             default:
                 System.out.println("Invalid selection.");
+                scanner.close();
                 return;
         }
 

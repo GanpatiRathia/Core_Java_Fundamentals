@@ -7,10 +7,11 @@ import java.io.IOException;
  */
 public class _8_Processes {
     public static void main(String[] args) {
-        try {
-            Process process = Runtime.getRuntime().exec("notepad.exe"); // Opens Notepad
-            System.out.println("Process started: Notepad");
-        } catch (IOException e) {
+    	try {
+            ProcessBuilder processBuilder = new ProcessBuilder("notepad.exe"); // Process process = Runtime.getRuntime().exec("notepad.exe"); Depreciated  
+            Process process = processBuilder.start();
+            process.waitFor(); // Waits for the process to exit (optional)
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
     }

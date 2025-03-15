@@ -15,7 +15,6 @@ public class _08_SealedClassDemo {
     public static void main(String[] args) {
         Shape shape1 = new Circle();
         Shape shape2 = new Rectangle();
-
         System.out.println("Shapes created successfully.");
     }
 }
